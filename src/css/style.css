@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: 20%;
+  border-bottom: 10px solid black;
+  position: relative;
+  border-bottom-left-radius: 50%;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+  background: -webkit-gradient(linear, right top, left top, from(#ff6666), to(#1f8dba));
+  background: linear-gradient(to left, #ff6666, #1f8dba);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(23, 122, 22, 0.5);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-10deg) rotateY(60deg);
+          transform: rotateX(-10deg) rotateY(60deg);
+  position: relative;
+  left: 20%;
+  top: 20%;
+  border: 3px solid yellow;
+  animation: boxDance 5s infinite ease alternate-reverse;
+}
+
+.cubic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid yellow;
+}
+
+.one {
+  background-color: red;
+  -webkit-transform: rotateX(0deg) translateZ(100px);
+          transform: rotateX(0deg) translateZ(100px);
+}
+
+.two {
+  background: -webkit-gradient(linear, right top, left top, from(red), color-stop(green), to(yellow));
+  background: linear-gradient(to left, red, green, yellow);
+  -webkit-transform: rotateX(90deg) translateZ(50px) translateY(52px);
+          transform: rotateX(90deg) translateZ(50px) translateY(52px);
+}
+
+.three {
+  background-color: rgba(190, 0, 239, 0.5);
+  -webkit-transform: rotateX(90deg) translateZ(-50px) translateY(50px);
+          transform: rotateX(90deg) translateZ(-50px) translateY(50px);
+}
+
+.four {
+  background-color: mediumpurple;
+  -webkit-transform: rotateY(90deg) translateZ(47.5px) translateY(0px) translateX(-50px);
+          transform: rotateY(90deg) translateZ(47.5px) translateY(0px) translateX(-50px);
+}
+
+@-webkit-keyframes boxDance {
+  from {
+    -webkit-transform: rotateX(-20deg) rotateY(120deg);
+            transform: rotateX(-20deg) rotateY(120deg);
+  }
+  to {
+    -webkit-transform: rotateX(100deg) rotateY(200deg);
+            transform: rotateX(100deg) rotateY(200deg);
+  }
+}
+
+@keyframes boxDance {
+  from {
+    -webkit-transform: rotateX(-20deg) rotateY(120deg);
+            transform: rotateX(-20deg) rotateY(120deg);
+  }
+  to {
+    -webkit-transform: rotateX(100deg) rotateY(200deg);
+            transform: rotateX(100deg) rotateY(200deg);
+  }
+}
+
+.motoPage {
+  position: absolute;
+  -webkit-transition: background-color 3s , -webkit-transform 2s;
+  transition: background-color 3s , -webkit-transform 2s;
+  transition: background-color 3s , transform 2s;
+  transition: background-color 3s , transform 2s , -webkit-transform 2s;
+  left: 50%;
+  font-family: 'Gill Sans';
+  font-size: 3rem;
+  background: -webkit-gradient(linear, left top, right top, from(red), color-stop(blue), to(yellow));
+  background: linear-gradient(to right, red, blue, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifmonospace;
+}
+
+.motoPage:hover {
+  -webkit-transform: rotateX(10deg) translateZ(20px);
+          transform: rotateX(10deg) translateZ(20px);
+  -webkit-box-shadow: 0.5px 0.5px 5px black;
+          box-shadow: 0.5px 0.5px 5px black;
+  background-color: rgba(0, 1, 0, 0.5);
+  -webkit-text-stroke: 1px white;
+  -webkit-transform: translateX(-100px) rotateX(350deg);
+          transform: translateX(-100px) rotateX(350deg);
+}
+
+.content {
+  width: 100%;
+  height: 80%;
+  border: 5px solid brown;
+  border-top-right-radius: 10%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gameArea {
+  width: 60%;
+  height: 70%;
+  border: 10px solid blue;
+}
+
+.puzzel {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background-color: red;
+  position: relative;
+}
+
+.firstLevel {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+
+.firstLevel .puzzel7 {
+  background-color: blue;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.firstLevel .puzzel4 {
+  background-color: yellow;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.firstLevel .puzzel3 {
+  background-color: orange;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.firstLevel .puzzel6 {
+  background-color: green;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.imgCover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+}
+
+.imagesToMatch {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.secondLevel {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.secondLevel .puzzel7 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+}
+
+.secondLevel .puzzel4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.secondLevel .puzzel5 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.secondLevel .puzzel9 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.secondLevel .puzzel8 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.secondLevel .puzzel6 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.thirdLevel {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+/*# sourceMappingURL=style.css.map */
