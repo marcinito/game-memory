@@ -2,7 +2,7 @@ import createElement from "./createElement";
 import znak from '../img/znak.png'
 export default function createPuzzle(howMany,whichLevel){
 
-    let pak=[]
+    let arrayWithSinglePuzzel=[]
     let cover=[]
    
   
@@ -13,10 +13,10 @@ export default function createPuzzle(howMany,whichLevel){
         imgCover.src=znak
         imgCover.classList.add("imgCover")
         const puzzel=createElement("div",[`puzzel${i}`,"puzzel"])
-        pak.push(puzzel)
+        arrayWithSinglePuzzel.push(puzzel)
         cover.push(imgCover)
      
     }
     
-    return {pak,containerPuzzel,cover}
+    return {arrayWithSinglePuzzel,containerPuzzel,cover}
 }
