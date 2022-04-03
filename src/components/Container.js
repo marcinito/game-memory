@@ -10,79 +10,73 @@ export function Container(){
     const play=createElement("button",["startGame"],"graj")
     const statement=createElement("div",["statement"])
     statement.innerHTML=statementContent()
-    let flag=false
+ let flagGrajButton=false
     play.addEventListener("click",(e)=>{
 
         let content=document.querySelector(".content")
         let btnStartGame=document.querySelector(".startGame")
-        if(flag===false){
-        content.style.transition=`all 3s`
-        if(window.innerWidth<500){
-            content.style.width=100+"%"
-        btnStartGame.style.left=`100%`
-       
+        if(flagGrajButton==false){
 
-
-        }else{
-            content.style.width=85+"%"
-            btnStartGame.style.left=`80%`
-
-        }
-        
-        if(window.innerWidth<700){
-            content.style.width=90+"%"
-           
-        btnStartGame.style.left=`90%`
-       
-
-
-        }else{
-            content.style.width=85+"%"
-            btnStartGame.style.left=`80%`
-
-        }
-        if(window.innerWidth>700){
-            content.style.width=90+"%"
-           
-        btnStartGame.style.left=`90%`
-       
-
-
-        }else{
-            content.style.width=85+"%"
-            btnStartGame.style.left=`80%`
-
-        }
-
-
-        content.style.opacity=1;
-        btnStartGame.style.opacity=0
-        
-        setTimeout(()=>{
-btnStartGame.style.opacity=1
-        },3000)
+     if(window.innerWidth<=500){
+    content.style.width=90+"%"
+    content.style.opacity=1
    
-        statement.style.transition=`all 3s`
+   console.log("seima")
+    btnStartGame.style.left=90+"%"
+   
+   
+    statement.style.opacity=0
+   
+     }
+     if(window.innerWidth>500 && window.innerWidth<717){
+        content.style.width=80+"%"
+        content.style.opacity=1
+       
+       console.log("seima")
+        btnStartGame.style.left=80+"%"
+      
+       
         statement.style.opacity=0
-    }
+       
+     }
 
-    if(flag===true){
+
+     if(window.innerWidth>718 && window.innerWidth<1400){
+        content.style.width="80%"
+        content.style.opacity=1
+        btnStartGame.style.left=81+"%"
+     
+       
+       
+        statement.style.opacity=0
+       
+         }
+         if(window.innerWidth>1400 && window.innerWidth<3000){
+            content.style.width="80%"
+            content.style.opacity=1
+            btnStartGame.style.left=80.8+"%"
+         
+           
+           
+            statement.style.opacity=0
+           
+             }
     
-        content.style.transition=`all 3s`
-        content.style.width=0+"%"
-        content.style.opacity=0;
-        btnStartGame.style.opacity=0
-        btnStartGame.style.left=`0%`
-        setTimeout(()=>{
-btnStartGame.style.opacity=1
-        },3000)
-   
-        statement.style.transition=`all 3s`
+         flagGrajButton=true
+
+
+    return
+        }
+      if(flagGrajButton===true){
+        content.style.width="0%"
+        content.style.opacity=0
+        btnStartGame.style.left=0+"%"
+        flagGrajButton=false
         statement.style.opacity=1
-
-
-    }
-      flag=!flag
+        return
+      }  
+      
+      
     })
     element.classList.add("container")
     element.appendChild(play)

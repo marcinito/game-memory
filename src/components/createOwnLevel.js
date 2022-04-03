@@ -6,8 +6,10 @@ import { arrayExampleImage } from "../Funkcje/ImagesToPuzzle";
 export default function createOwnLevel(){
 console.log(arrayExampleImage)
 const boxToCreateOwnLevel=createElement("div",["boxToCreateOwnLevel"])
+// const wrapper=createElement("div",["wrapperCreateOwn"])
     const h1=createElement("h1",["h1FromInstruction"],"Stwórz swoją własny poziom gry")
     const p=createElement("p",["instrukcja"])
+    const pakButton=createElement("div",["pakButton"])
     p.innerHTML=`W <span class="nazwaObrazka">różowym okienku</span> wpisz nazwe(dowolną)
     dla swojego zdjęcia , w okienku <span class="adresDoImg">łososiowy</span> wstaw link do obrazka , <span class="infoJakSkopiowacObraz">
     Wejdz w google , wpisz nazawe interesujacego Cie obrazka , gdy się wyswietli kliknij na niego prawym przyciskiem myszki i wybierz opcje
@@ -35,9 +37,12 @@ const boxToCreateOwnLevel=createElement("div",["boxToCreateOwnLevel"])
     boxToCreateOwnLevel.appendChild(idImage)
     boxToCreateOwnLevel.appendChild(addImage)
     boxToCreateOwnLevel.appendChild(exampleImages)
-    boxToCreateOwnLevel.appendChild(btnAddImage)
-    boxToCreateOwnLevel.appendChild(btnAddLevel)
-    boxToCreateOwnLevel.appendChild(btnStart)
+pakButton.appendChild(btnAddImage)
 
+pakButton.appendChild(btnAddLevel)
+  
+    pakButton.appendChild(btnStart)
+boxToCreateOwnLevel.appendChild(pakButton)
+    // boxToCreateOwnLevel.appendChild(wrapper)
     return boxToCreateOwnLevel
 }

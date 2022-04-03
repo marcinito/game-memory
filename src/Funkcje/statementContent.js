@@ -10,24 +10,24 @@ let inner=`<h1 class="h1Statement">Kreatywne ćwiczenia na pamięć</h1><br/>
       ich koncentrację i funkcje poznawcze. Według badań półkule mózgu są odpowiedzialne za</p>
       <div class="olPak">
 <div class="firstOl">
-      <ol>
+      <ul>
 <h3>Prawa Półkula</h3>
 <li class="li">zdolności artystyczne</li>
 <li class="li">myślenie abstrakcyjne</li>
 <li class="li">kreatywność</li>
 <li class="li">wyobraźnia</li>
 <li class="li">zdolności muzyczne</li>
- </ol>
+ </ul>
  </div>
  <div class="firstOl">
- <ol>
+ <ul>
  <h3>Lewa Półkula</h3>
  <li class="li">mówienie i rozumienie słów</li>
  <li class="li">logiczne myślenie</li>
  <li class="li">zdolności analityczne</li>
  <li class="li">obliczenia</li>
  <li class="li">rozpoznawanie za pomocą dotyku</li>
- </ol>
+ </ul>
  </div>
  </div>
  <em class="emStatement">Omawiane metody zapamiętywania, czyli mnemotechniki to sposoby, które starają się

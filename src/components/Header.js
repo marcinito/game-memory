@@ -6,7 +6,7 @@ export function Header(){
     const two=createElement("div",["two","cubic"])
     const three=createElement("div",["three","cubic"])
     const four=createElement("div",["four","cubic"])
-    const h1=createElement("h1",["motoPage"],'Train you Memory')
+    const h1=createElement("h1",["motoPage"],'Memory')
    
 box.appendChild(one)
 box.appendChild(two)

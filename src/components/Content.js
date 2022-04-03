@@ -20,8 +20,8 @@ console.log(imagesToThirdLevel)
 
 const tdl=[
     {quantity:8,nameLvl:"firstLevel",imgLvl:imagesTofirstLevel,mixImg:DontRepeatedRandomNumber(8)},
-    {quantity:10,nameLvl:"secondLevel",imgLvl:imagesToSecondLevel,mixImg:DontRepeatedRandomNumber(10)},
-    {quantity:12,nameLvl:"thirdLevel",imgLvl:imagesToThirdLevel,mixImg:DontRepeatedRandomNumber(12)}
+    // {quantity:10,nameLvl:"secondLevel",imgLvl:imagesToSecondLevel,mixImg:DontRepeatedRandomNumber(10)},
+    // {quantity:12,nameLvl:"thirdLevel",imgLvl:imagesToThirdLevel,mixImg:DontRepeatedRandomNumber(12)}
 ]
 
 export default function Content(){
@@ -48,7 +48,7 @@ arrayWithSinglePuzzel.forEach((el,i,arr)=>{
    
     el.addEventListener("click",(e)=>{
         console.log(e.target)
-        console.log()
+       
         if(ArrayToCheckIfMatch.length<2){
         e.target.style.opacity=0
         const checkInside=[...arrayWithSinglePuzzel[i].children]
@@ -64,7 +64,7 @@ arrayWithSinglePuzzel.forEach((el,i,arr)=>{
             ArrayToCheckIfMatch[0].parentNode.setAttribute("trafiony","")
             ArrayToCheckIfMatch[1].parentNode.setAttribute("trafiony","")
               ArrayToCheckIfMatch=[]
-              console.log(el.parentNode.children)
+          
               let checkIfEvryIsMatched=[...el.parentNode.children]
            checkIfEvryIsMatched=checkIfEvryIsMatched.every(el=>el.hasAttribute("trafiony")===true)
           
@@ -82,7 +82,7 @@ gameArea.appendChild(transitionFromLevelToLevel())
 
       
         tdl.shift()
-        console.log(gameArea.childNodes[0])
+     
       
    
 
@@ -92,6 +92,7 @@ gameArea.appendChild(transitionFromLevelToLevel())
         }
         //if array with level are empty show panel to create own level//
         else{
+            gameArea.removeChild(gameArea.children[0])
             let arrayWitAddImages=[]
             let ownLevel
             const content=document.querySelector(".content")
@@ -208,7 +209,7 @@ gameArea.appendChild(transitionFromLevelToLevel())
                 }
             })   
         }
-    },10000)
+    },3000)
     }  
 
           
