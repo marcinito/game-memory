@@ -7,7 +7,7 @@
     list-style-type:none;
 }
 body{
-    background-color: pink;
+    background-color: red;
 }
 @media(min-width:320px){
     .container{
@@ -568,19 +568,19 @@ top:50%;
     }
     @keyframes oneL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px);box-shadow: 3px 3px black}
+        100%{transform:translateY(0px);box-shadow:0px 3px rgba(0,0,0,0.3)}
     }
     @keyframes twoL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px);box-shadow: 3px 3px black}
+        100%{transform:translateY(0px);box-shadow:0px 3px rgba(0,0,0,0.3)}
     }
     @keyframes threeL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px);box-shadow: 3px 3px black}
+        100%{transform:translateY(0px);box-shadow:0px 3px rgba(0,0,0,0.3)}
     }
     @keyframes fourL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px);box-shadow: 3px 3px black;}
+        100%{transform:translateY(0px);box-shadow:0px 3px rgba(0,0,0,0.3);}
     }
 }
 //--------------------------------------------------------------//
@@ -1161,19 +1161,19 @@ top:50%;
     }
     @keyframes oneL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px);box-shadow:3px 3px black}
+        100%{transform:translateY(0px);box-shadow:0px 3px rgba(0,0,0,0.3)}
     }
     @keyframes twoL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px);box-shadow:3px 3px black}
+        100%{transform:translateY(0px);box-shadow:0px 3px rgba(0,0,0,0.3) }
     }
     @keyframes threeL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px);box-shadow:3px 3px black}
+        100%{transform:translateY(0px);box-shadow:0px 3px rgba(0,0,0,0.3)}
     }
     @keyframes fourL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px);box-shadow:3px 3px black}
+        100%{transform:translateY(0px);box-shadow:0px 3px rgba(0,0,0,0.3)}
     }
 }
 //-----------------------------------------------------------------------//

@@ -4,11 +4,12 @@ var ghpages = require('gh-pages');
 
 ghpages.publish('dist', {
   branch: 'master',
-  repo: 'https://marcinito.github.io/game-memory/'
+  repo: 'https://marcinito.github.io/game-memory/',
+  push:true,
 });
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+
 
 
 module.exports = {
@@ -26,7 +27,7 @@ module.exports = {
         new HtmlWebpackPlugin({
           title: 'Memory',
         }),
-        new FaviconsWebpackPlugin("./src/img/znak.png")
+ 
   
       ],
   output: {
