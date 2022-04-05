@@ -1,6 +1,14 @@
 const path = require('path');
 
+var ghpages = require('gh-pages');
+
+ghpages.publish('dist', {
+  branch: 'master',
+  repo: 'https://marcinito.github.io/game-memory/'
+});
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
     mode:'production',
@@ -16,12 +24,19 @@ module.exports = {
         new HtmlWebpackPlugin({
           title: 'Development',
         }),
+  
       ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean:true,
     
+  },
+  performance: {
+    assetFilter: function (assetFilename) {
+      return assetFilename.endsWith('.js');
+    },
+    hints:false,
   },
  module: {
    rules: [

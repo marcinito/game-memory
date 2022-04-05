@@ -308,7 +308,9 @@ body {
   }
   .boxToCreateOwnLevel {
     width: 100%;
-    height: calc(fit-content+20px);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border: 5px double brown;
     background: -webkit-gradient(linear, right top, left top, from(#fff3f5), color-stop(#9a9a9a), to(#666666));
     background: linear-gradient(to left, #fff3f5, #9a9a9a, #666666);
@@ -507,8 +509,8 @@ body {
     width: fit-content;
     position: relative;
     left: 50%;
-    -webkit-transform: translate(-40%, 0);
-            transform: translate(-40%, 0);
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
     border: 1px solid black;
   }
   .firstOl {

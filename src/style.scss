@@ -238,7 +238,7 @@ top:10%;
     
     .boxToCreateOwnLevel{
         width:100%;
-        height:calc(fit-content+20px);
+        height:fit-content;
         border:5px double brown;
         background: linear-gradient(to left, lighten(pink,10%),lighten(gray,10%),lighten(black,40%));
        position: relative;
@@ -429,7 +429,7 @@ top:50%;
         width:fit-content;
         position: relative;
        left:50%;
-       transform: translate(-40%,0);
+       transform: translate(-50%,0);
       
        border:1px solid black;
       
