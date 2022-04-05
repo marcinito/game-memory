@@ -1353,6 +1353,8 @@ body {
     100% {
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
+      -webkit-box-shadow: 3px 3px black;
+              box-shadow: 3px 3px black;
     }
   }
   @keyframes oneL {
@@ -1363,6 +1365,8 @@ body {
     100% {
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
+      -webkit-box-shadow: 3px 3px black;
+              box-shadow: 3px 3px black;
     }
   }
   @-webkit-keyframes twoL {
@@ -1373,6 +1377,8 @@ body {
     100% {
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
+      -webkit-box-shadow: 3px 3px black;
+              box-shadow: 3px 3px black;
     }
   }
   @keyframes twoL {
@@ -1383,6 +1389,8 @@ body {
     100% {
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
+      -webkit-box-shadow: 3px 3px black;
+              box-shadow: 3px 3px black;
     }
   }
   @-webkit-keyframes threeL {
@@ -1393,6 +1401,8 @@ body {
     100% {
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
+      -webkit-box-shadow: 3px 3px black;
+              box-shadow: 3px 3px black;
     }
   }
   @keyframes threeL {
@@ -1403,6 +1413,8 @@ body {
     100% {
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
+      -webkit-box-shadow: 3px 3px black;
+              box-shadow: 3px 3px black;
     }
   }
   @-webkit-keyframes fourL {
@@ -1413,6 +1425,8 @@ body {
     100% {
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
+      -webkit-box-shadow: 3px 3px black;
+              box-shadow: 3px 3px black;
     }
   }
   @keyframes fourL {
@@ -1423,6 +1437,8 @@ body {
     100% {
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
+      -webkit-box-shadow: 3px 3px black;
+              box-shadow: 3px 3px black;
     }
   }
 }

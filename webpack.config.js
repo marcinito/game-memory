@@ -8,6 +8,7 @@ ghpages.publish('dist', {
 });
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 
 module.exports = {
@@ -25,6 +26,7 @@ module.exports = {
         new HtmlWebpackPlugin({
           title: 'Memory',
         }),
+        new FaviconsWebpackPlugin("./src/img/znak.png")
   
       ],
   output: {

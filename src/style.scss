@@ -1161,19 +1161,19 @@ top:50%;
     }
     @keyframes oneL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px)}
+        100%{transform:translateY(0px);box-shadow:3px 3px black}
     }
     @keyframes twoL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px)}
+        100%{transform:translateY(0px);box-shadow:3px 3px black}
     }
     @keyframes threeL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px)}
+        100%{transform:translateY(0px);box-shadow:3px 3px black}
     }
     @keyframes fourL{
         0%{transform:translateY(-50px)}
-        100%{transform:translateY(0px)}
+        100%{transform:translateY(0px);box-shadow:3px 3px black}
     }
 }
 //-----------------------------------------------------------------------//
