@@ -20,8 +20,8 @@ console.log(imagesToThirdLevel)
 
 const tdl=[
     {quantity:8,nameLvl:"firstLevel",imgLvl:imagesTofirstLevel,mixImg:DontRepeatedRandomNumber(8)},
-    // {quantity:10,nameLvl:"secondLevel",imgLvl:imagesToSecondLevel,mixImg:DontRepeatedRandomNumber(10)},
-    // {quantity:12,nameLvl:"thirdLevel",imgLvl:imagesToThirdLevel,mixImg:DontRepeatedRandomNumber(12)}
+    {quantity:10,nameLvl:"secondLevel",imgLvl:imagesToSecondLevel,mixImg:DontRepeatedRandomNumber(10)},
+    {quantity:12,nameLvl:"thirdLevel",imgLvl:imagesToThirdLevel,mixImg:DontRepeatedRandomNumber(12)}
 ]
 
 export default function Content(){
