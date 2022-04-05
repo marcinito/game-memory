@@ -462,9 +462,7 @@ body {
   .exampleImagesToAdd {
     border: 1px solid black;
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 200px;
     position: relative;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
