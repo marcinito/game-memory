@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: red;
+  background-color: blue;
 }
 
 @media (min-width: 320px) {
