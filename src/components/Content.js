@@ -47,10 +47,13 @@ arrayWithSinglePuzzel.forEach((el,i,arr)=>{
    el.appendChild(cover[i])
    
     el.addEventListener("click",(e)=>{
-        console.log(e.target)
+       
        
         if(ArrayToCheckIfMatch.length<2){
+            if(e.target.getAttribute("class")==="imgCover"){
         e.target.style.opacity=0
+            }
+        console.log(e.target)
         const checkInside=[...arrayWithSinglePuzzel[i].children]
 
        ArrayToCheckIfMatch.push(checkInside[0])
